@@ -104,7 +104,7 @@ public class BitcoinService(IHttpClientFactory httpClientFactory, IConfiguration
             VerificationProgress = blockchainInfo?["verificationprogress"]?.GetValue<double>() ?? 0,
             IsPruned = blockchainInfo?["pruned"]?.GetValue<bool>() ?? false,
             SizeOnDisk = blockchainInfo?["size_on_disk"]?.GetValue<ulong>() ?? 0,
-            NodeVersion = networkInfo.Version,
+            NodeVersion = networkInfo.Version.ToString(),
             UserAgent = networkInfo.SubVersion,
             ProtocolVersion = networkInfo.ProtocolVersion,
             ConnectionsIn = networkInfo.ConnectionsIn,
