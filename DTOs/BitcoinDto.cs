@@ -29,7 +29,7 @@ public class MempoolInfoDto
 
 public class NetworkInfoDto
 {
-    public string Version { get; set; } = string.Empty;
+    public int Version { get; set; }
     public string SubVersion { get; set; } = string.Empty;
     public int ProtocolVersion { get; set; }
     public int ConnectionsIn { get; set; }

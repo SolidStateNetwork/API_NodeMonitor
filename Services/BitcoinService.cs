@@ -60,7 +60,7 @@ public class BitcoinService(IHttpClientFactory httpClientFactory, IConfiguration
         var result = await MakeRpcRequestAsync("getnetworkinfo");
         return new NetworkInfoDto
         {
-            Version = result?["version"]?.GetValue<string>() ?? string.Empty,
+            Version = result?["version"]?.GetValue<int>() ?? 0,
             SubVersion = result?["subversion"]?.GetValue<string>() ?? string.Empty,
             ProtocolVersion = result?["protocolversion"]?.GetValue<int>() ?? 0,
             ConnectionsIn = result?["connections_in"]?.GetValue<int>() ?? 0,
