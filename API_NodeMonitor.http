@@ -1,0 +1,6 @@
+@API_NodeMonitor_HostAddress = http://localhost:5117
+
+GET {{API_NodeMonitor_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

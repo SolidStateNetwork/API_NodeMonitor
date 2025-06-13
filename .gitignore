@@ -1,0 +1,43 @@
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+
+# User-specific files
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# User-specific files (MonoDevelop/Xamarin Studio)
+*.userprefs
+
+# Build results
+[Dd]ebug/
+[Dd]ebugPublic/
+[Rr]elease/
+[Rr]eleases/
+x64/
+x86/
+[Aa][Rr][Mm]/
+[Aa][Rr][Mm]64/
+bld/
+[Bb]in/
+[Oo]bj/
+[Ll]og/
+
+# Visual Studio 2019 cache/options directory
+.vs/
+
+# Visual Studio Code cache/options directory
+.vscode/
+
+# Rider cache/options directory
+.idea/
+
+# Tye files
+.tye/
+
+# Test Results
+TestResults/
+
+# Local secrets
+secrets.json
+appsettings.Development.json
